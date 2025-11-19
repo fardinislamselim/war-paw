@@ -1,94 +1,120 @@
 # 🐾 WarmPaws – Pet Care in Winter
 
-## 🌍 Live Demo
 
-🔗 **Visit Website:** [https://warm-paws-ph.netlify.app/](https://warm-paws-ph.netlify.app/)   
+## 🌐 Live Demo
 
----
-
-## 🌨️ About the Project
-
-**WarmPaws** is a cozy and modern single-page application (SPA) designed to help pet owners care for their furry friends during the cold season.  
-It provides an all-in-one hub for exploring **local winter pet care services**, **pet clothing**, **grooming options**, and **expert winter care tips**.  
-
-The design emphasizes **minimalism**, **warm visuals**, and **approachability**, making it a delightful experience across all devices.
-
+🔗 **Website:** [https://warm-paws-ph.netlify.app/](https://warm-paws-ph.netlify.app/)
 
 ---
 
-## ✨ Key Features
+## 📝 Project Overview (সংক্ষেপে)
 
-✅ **Home Page**
-- Winter-themed hero slider using **Swiper.js**.
-- Popular Winter Care Services — loaded dynamically from a local JSON file.
-- Service cards showing image, name, rating, price, and “View Details”.
-- Extra informative sections:
-  - “Winter Care Tips for Pets”
-  - “Meet Our Expert Vets”
-  - “Winter Clothing Collection”
+**WarmPaws** is a minimal, modern, and user-friendly React Single Page Application (SPA) that brings together all the essential information and services needed to care for pets during the winter season.
+Users can explore **winter pet care services**, **tips**, **vets**, **winter clothing**, and even **book services** directly from the platform.
+The project also includes login-protected routes powered by Firebase Authentication.
 
-✅ **Service Details (Protected Route)**
-- Accessible only when logged in.
-- Shows all service info from JSON.
-- Includes a “Book Service” form:
-  - Fields: Name, Email  
-  - “Book Now” button → shows success toast and clears form.
-
-✅ **Authentication (Firebase)**
-- **Login Page:**  
-  - Email, Password, Forget Password, Google Sign-in  
-  - Redirects to intended route on login success  
-  - Password toggle eye button  
-- **Signup Page:**  
-  - Fields: Name, Email, Photo URL, Password  
-  - Password validation:  
-    - 1 Uppercase  
-    - 1 Lowercase  
-    - Minimum 6 characters  
-  - Google sign-up option  
-- **Forgot Password Page:**  
-  - Email field pre-filled if coming from login  
-  - Redirects user to Gmail after reset request  
-
-✅ **My Profile Page**
-- Displays logged-in user info (Name, Email, Photo)
-- “Update Profile” button → allows changing name or photo using `updateProfile()`
-- Fully functional logout option
-
-✅ **Other Highlights**
-- Toast notifications via **react-hot-toast**
-- Smooth animations using **AOS** and **Animate.css**
-- SPA with persistent Navbar & Footer (no reload errors)
-- Firebase configuration secured via environment variables
-- Deployed on **Netlify** (authorized domain added in Firebase)
 
 ---
 
+## ✨ Main Features
 
-## 🛠️ Technologies Used
-
-| Category | Tools / Technologies |
-|-----------|----------------------|
-| **Frontend Framework** | React.js (Vite) |
-| **Styling** | Tailwind CSS, DaisyUI |
-| **Routing** | React Router DOM |
-| **Authentication** | Firebase Authentication (Email/Password, Google OAuth) |
-| **State Management** | React Context API |
-| **Animations** | AOS, Animate.css |
-| **Slider / Carousel** | Swiper.js |
-| **Notifications** | React Hot Toast |
-| **Deployment** | Netlify |
-| **Version Control** | Git & GitHub |
+* ❄️ **Winter-themed Home Page** With Animated Slider
+* ⭐ Popular winter services
+* 🔒 **Protected Route** — service details page
+* 🧾 Service booking form
+* 👤 Full **User Authentication** with Firebase
+* 👥 Google OAuth Login/Signup
+* 🖼️ My Profile page with **updateProfile**
+* 🔔 Toast notifications (react-hot-toast)
+* 🎞️ Smooth animations (AOS + Animate.css)
+* 🧭 SPA navigation with persistent Navbar & Footer
+* 🌐 Deployed on Netlify
 
 ---
 
-## 🗂️ Screens & Routes
+## 🛠️ Main Technologies Used
 
-| Route | Page | Access |
-|-------|------|--------|
-| `/` | Home | Public |
-| `/services/:id` | Service Details | 🔒 Protected |
-| `/login` | Login | Public |
-| `/register` | Signup | Public |
-| `/profile` | My Profile | 🔒 Protected |
-| `/forgot-password` | Forgot Password | Public |
+| Category           | Technology            |
+| ------------------ | --------------------- |
+| Frontend Framework | React.js (Vite)       |
+| Styling            | Tailwind CSS, DaisyUI |
+| Routing            | React Router DOM      |
+| Authentication     | Firebase Auth         |
+| State Management   | Context API           |
+| Animations         | AOS, Animate.css      |
+| Slider             | Swiper.js             |
+| Notifications      | React Hot Toast       |
+| Deployment         | Netlify               |
+
+---
+
+## 📦 Dependencies
+
+**Frontend Dependencies**
+
+```
+react
+react-dom
+react-router
+firebase
+swiper
+aos
+react-hot-toast
+animate.css
+```
+
+**Dev Dependencies**
+
+```
+vite
+eslint
+tailwindcss
+postcss
+autoprefixer
+```
+
+---
+
+## ⚙️ How to Run Locally
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/fardinislamselim/war-paw.git
+cd warm-paws
+```
+
+### 2️⃣ Install packages
+
+```bash
+npm install
+```
+
+### 3️⃣ Create `.env` file
+
+```env
+VITE_apiKey=your_key
+VITE_authDomain=your_project.firebaseapp.com
+VITE_projectId=your_project_id
+VITE_storageBucket=your_project.appspot.com
+VITE_messagingSenderId=your_sender_id
+VITE_appId=your_app_id
+```
+
+### 4️⃣ Run the project
+
+```bash
+npm run dev
+```
+
+Project will run on:
+👉 [http://localhost:5173/](http://localhost:5173/)
+
+---
+
+## 🔗 Relevant Links
+
+🔹 **Live Demo:** [https://warm-paws-ph.netlify.app/](https://warm-paws-ph.netlify.app/)
+
+🔹 **GitHub Repo (Frontend):** [https://github.com/fardinislamselim/war-paw](https://github.com/fardinislamselim/war-paw)
+
