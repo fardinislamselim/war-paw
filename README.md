@@ -7,8 +7,7 @@
 
 ---
 
-## 📝 Project Overview (সংক্ষেপে)
-
+## 📝 Project Overview
 **WarmPaws** is a minimal, modern, and user-friendly React Single Page Application (SPA) that brings together all the essential information and services needed to care for pets during the winter season.
 Users can explore **winter pet care services**, **tips**, **vets**, **winter clothing**, and even **book services** directly from the platform.
 The project also includes login-protected routes powered by Firebase Authentication.
