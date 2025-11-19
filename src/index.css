@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+@plugin "daisyui/theme" {
+  name: "petcomfort";
+  default: true;
+
+
+  --color-primary: #4a90e2;
+  --color-secondary: #f5a623;
+  --color-accent: #8b572a;
+
+
+  --color-neutral: #333333; 
+  --color-base-100: #f9f9f9;
+  --color-base-200: #f0f0f0;
+
+
+  --color-info: #93c5fd;
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+  --color-error: #ef4444;
+}
+
+.btn-primary {
+  background: linear-gradient(145deg, #4a90e2, #357abd);
+  box-shadow: 0 6px 16px rgba(74, 144, 226, 0.4);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(145deg, #5aa0f0, #3b7dd0);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(74, 144, 226, 0.5);
+}
+
+a.active {
+  color: #4a90e2;
+  font-weight: 600;
+  text-decoration: underline;
+  
+}
